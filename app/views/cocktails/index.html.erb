@@ -1,8 +1,8 @@
 <div class="container d-flex">
   <div class="card-padding">
-    <% @cocktails.each do |cocktail|  %>
+    <% @cocktails.each do |cocktail| %>
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1541807243774-518bdde38627?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80" alt="Card image cap">
+        <%= cl_image_tag cocktail.photo, class: 'card-img-top' %>
         <div class="card-body">
           <div class="text-top">
             <h5 class="card-title"><%= cocktail.name %></h5>
@@ -11,11 +11,16 @@
               <p><%=ingredient.name%><p>
             <% end %>
           </div>
-          <div class="link-bottom">
-            <%= link_to "View ingredients", cocktail_path(cocktail) %>
+        </div>
+        <div class="link-bottom">
+          <%= link_to "View ingredients", cocktail_path(cocktail) %>
+          <div class="logo-pink">
+            <i class="fas fa-cocktail"></i>
           </div>
         </div>
       </div>
     <% end %>
   </div>
 </div>
+
+

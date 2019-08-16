@@ -1,0 +1,35 @@
+.display-card {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  height: 50vh;
+}
+
+.container-display-card {
+  margin: 0 auto;
+}
+
+.display-card-name {
+  h1 {
+    color: $success;
+    font-size: 100px;
+    padding: 50px;
+  }
+
+  a {
+    padding: 50px;
+    font-size: 40px;
+    color: $success;
+    text-decoration: none;
+    a:hover {
+      color: rgba(244, 20, 214, 0.1)
+    }
+  }
+}
+
+.display-card-text {
+  width: 30vw;
+  display: flex;
+  align-items: flex-end;
+
+}

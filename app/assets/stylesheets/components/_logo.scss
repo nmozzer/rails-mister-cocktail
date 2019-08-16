@@ -1,0 +1,19 @@
+.logo-pink {
+  display: flex;
+  align-items: center;
+  i {
+    color: $success;
+    font-size: 30px;
+    margin-right: 10px;
+  }
+}
+
+.logo-pink-large {
+  display: flex;
+  align-items: center;
+  i {
+    color: $success;
+    font-size: 50px;
+    margin-right: 10px;
+  }
+}

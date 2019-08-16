@@ -17,7 +17,16 @@
 }
 
 .link-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  background-color: $primary;
   a {
-    margin-top: 10px;
+    color: $success;
   }
+}
+
+.direction-column {
+  flex-direction: column;
 }
